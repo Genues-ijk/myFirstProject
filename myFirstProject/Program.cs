@@ -27,9 +27,10 @@
             c = Console.ReadLine();
             Console.WriteLine("lastname:");
             d = Console.ReadLine();
-            fullname = c + d;
+            fullname = c + d;  
             Console.WriteLine(@"The length of your full name fullname ="+ fullname.Length);
             #endregion
+            //--the end-----
         }
     }
 }
