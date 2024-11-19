@@ -5,34 +5,7 @@ namespace myFirstProject
     internal class Program
     {
         #region Assignment 4
-        //simple calculator function take no1,no2 , operation and return result
-
-        static decimal Addition(decimal no1, decimal no2)
-        {
-
-            decimal Add = no1 + no2;
-           
-            return Add;
-        }  static decimal Subtract(decimal n1, decimal n2)
-        {
-
-            decimal sub = n1 - n2;
-           
-            return sub;
-        }  static decimal Multiplication(decimal number1, decimal number2)
-        {
-
-            decimal mul = number1 * number2;
-           
-            return mul;
-        }  static decimal Division(decimal fno, decimal sno)
-        {
-
-            decimal div = fno / sno;
-           
-            return div;
-        }
-        #endregion
+      
         static double Calculate(double no1, double no2, char operation)
         {
             switch (operation)
@@ -93,7 +66,7 @@ namespace myFirstProject
             }
             Console.Write("]\n");
             Console.WriteLine($"The number {specialNumber} occurs {count} times.");
-
+#endregion
         }
 
 
