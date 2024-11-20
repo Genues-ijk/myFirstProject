@@ -2,97 +2,116 @@
 
 namespace myFirstProject
 {
+
     internal class Program
     {
+
         #region Assignment 4
         //simple calculator function take no1,no2 , operation and return result
 
-        static decimal Addition(decimal no1, decimal no2)
-        {
+        //static decimal Addition(decimal no1, decimal no2)
+        //{
 
-            decimal Add = no1 + no2;
+        //    decimal Add = no1 + no2;
            
-            return Add;
-        }  static decimal Subtract(decimal n1, decimal n2)
-        {
+        //    return Add;
+        //}  static decimal Subtract(decimal n1, decimal n2)
+        //{
 
-            decimal sub = n1 - n2;
+        //    decimal sub = n1 - n2;
            
-            return sub;
-        }  static decimal Multiplication(decimal number1, decimal number2)
-        {
+        //    return sub;
+        //}  static decimal Multiplication(decimal number1, decimal number2)
+        //{
 
-            decimal mul = number1 * number2;
+        //    decimal mul = number1 * number2;
            
-            return mul;
-        }  static decimal Division(decimal fno, decimal sno)
-        {
+        //    return mul;
+        //}  static decimal Division(decimal fno, decimal sno)
+        //{
 
-            decimal div = fno / sno;
+        //    decimal div = fno / sno;
            
-            return div;
-        }
+        //    return div;
+        //}
+        //#endregion
+        //static double Calculate(double no1, double no2, char operation)
+        //{
+        //    switch (operation)
+        //    {
+        //        case '+':
+        //            return no1 + no2;
+        //        case '-':
+        //            return no1 - no2;
+        //        case '*':
+        //            return no1 * no2;
+        //        case '/':
+        //            if (no2 != 0)
+        //                return no1 / no2;
+        //            else
+        //                throw new DivideByZeroException("Cannot divide by zero!");
+        //        default:
+        //            throw new InvalidOperationException("Invalid operation!");
+        //    }
+        //}
+        //static int CountOccurrences(int[] array, int number)
+        //{
+        //    int count = 0;
+        //    foreach (int n in array)
+        //    {
+        //        if (n == number)
+        //        {
+        //            count++;
+        //        }
+        //    }
+        //    return count;
+        //}
         #endregion
-        static double Calculate(double no1, double no2, char operation)
-        {
-            switch (operation)
-            {
-                case '+':
-                    return no1 + no2;
-                case '-':
-                    return no1 - no2;
-                case '*':
-                    return no1 * no2;
-                case '/':
-                    if (no2 != 0)
-                        return no1 / no2;
-                    else
-                        throw new DivideByZeroException("Cannot divide by zero!");
-                default:
-                    throw new InvalidOperationException("Invalid operation!");
-            }
-        }
-        static int CountOccurrences(int[] array, int number)
-        {
-            int count = 0;
-            foreach (int n in array)
-            {
-                if (n == number)
-                {
-                    count++;
-                }
-            }
-            return count;
-        }
-
         static void Main(string[] args)
         {
+            #region Assignment5
+            //Create instance (Object) from (Employee) class [Physical representaion]
+            //class name instance(object) with unique name
+            Employee employee = new Employee(); //reference point to employee(instance(object)) in memory in (heap)-->see next line to complete
+                                                //-->to separate eveysingle instance(object) name with others
+                                                //to determine some variable in some instance: instance name dot variable name| employee.EmployeeName
+                                                //note: we called variable the declare it inside class (member) not variable.
+            employee.ID = 1;
+            employee.Name = "Rayan Mohammed";
+            employee.address = "z city, A street, postcode: 12121";
+            employee.PhoneNumber = 0123456789;
+            employee.SetSalary(1);
+            employee.Display();
+            Console.WriteLine("=====================================\n");
 
-            Console.WriteLine("Enter the first number:");
-            double num1 = Convert.ToDouble(Console.ReadLine());
+            employee.addemployee();
+            #endregion
 
-            Console.WriteLine("Enter the second number:");
-            double num2 = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("Enter the first number:");
+            //double num1 = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine("Enter an operation (+, -, *, /):");
-            char operation = Console.ReadKey().KeyChar;
+            //Console.WriteLine("Enter the second number:");
+            //double num2 = Convert.ToDouble(Console.ReadLine());
 
-            double result = Calculate(num1, num2, operation);
+            //Console.WriteLine("Enter an operation (+, -, *, /):");
+            //char operation = Console.ReadKey().KeyChar;
 
-            Console.WriteLine($"\nThe result is: {result}");
+            //double result = Calculate(num1, num2, operation);
+
+            //Console.WriteLine($"\nThe result is: {result}");
 
 
-            int[] numbers = { 1, 2, 3, 4, 2, 2, 5 };
-            int specialNumber = 2;
-            Console.Write("===================================");
-            Console.Write("The Array = [");
-            int count = CountOccurrences(numbers, specialNumber);
-            for (int i = 0; i <= 6; i++)
-            {
-                Console.Write($"{numbers[i]},");
-            }
-            Console.Write("]\n");
-            Console.WriteLine($"The number {specialNumber} occurs {count} times.");
+            //int[] numbers = { 1, 2, 3, 4, 2, 2, 5 };
+            //int specialNumber = 2;
+            //Console.Write("===================================");
+            //Console.Write("The Array = [");
+            //int count = CountOccurrences(numbers, specialNumber);
+            //for (int i = 0; i <= 6; i++)
+            //{
+            //    Console.Write($"{numbers[i]},");
+            //}
+            //Console.Write("]\n");
+            //Console.WriteLine($"The number {specialNumber} occurs {count} times.");
 
         }
 
