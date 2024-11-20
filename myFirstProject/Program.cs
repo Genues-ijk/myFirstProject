@@ -9,33 +9,65 @@ namespace myFirstProject
         #region Assignment 4
         //simple calculator function take no1,no2 , operation and return result
 
-        static decimal Addition(decimal no1, decimal no2)
-        {
+        //static decimal Addition(decimal no1, decimal no2)
+        //{
 
-            decimal Add = no1 + no2;
-           
-            return Add;
-        }  static decimal Subtract(decimal n1, decimal n2)
-        {
+        //    decimal Add = no1 + no2;
 
-            decimal sub = n1 - n2;
-           
-            return sub;
-        }  static decimal Multiplication(decimal number1, decimal number2)
-        {
+        //    return Add;
+        //}  static decimal Subtract(decimal n1, decimal n2)
+        //{
 
-            decimal mul = number1 * number2;
-           
-            return mul;
-        }  static decimal Division(decimal fno, decimal sno)
-        {
+        //    decimal sub = n1 - n2;
 
-            decimal div = fno / sno;
-           
-            return div;
-        }
+        //    return sub;
+        //}  static decimal Multiplication(decimal number1, decimal number2)
+        //{
+
+        //    decimal mul = number1 * number2;
+
+        //    return mul;
+        //}  static decimal Division(decimal fno, decimal sno)
+        //{
+
+        //    decimal div = fno / sno;
+
+        //    return div;
+        //}
+        //#endregion
+        //static double Calculate(double no1, double no2, char operation)
+        //{
+        //    switch (operation)
+        //    {
+        //        case '+':
+        //            return no1 + no2;
+        //        case '-':
+        //            return no1 - no2;
+        //        case '*':
+        //            return no1 * no2;
+        //        case '/':
+        //            if (no2 != 0)
+        //                return no1 / no2;
+        //            else
+        //                throw new DivideByZeroException("Cannot divide by zero!");
+        //        default:
+        //            throw new InvalidOperationException("Invalid operation!");
+        //    }
+        //}
+        //static int CountOccurrences(int[] array, int number)
+        //{
+        //    int count = 0;
+        //    foreach (int n in array)
+        //    {
+        //        if (n == number)
+        //        {
+        //            count++;
+        //        }
+        //    }
+        //    return count;
+        //}
         #endregion
-        static double Calculate(double no1, double no2, char operation)
+        static void Main(string[] args)
         {
             #region Assignment5
             //Create instance (Object) from (Employee) class [Physical representaion]
@@ -69,17 +101,17 @@ namespace myFirstProject
             //Console.WriteLine($"\nThe result is: {result}");
 
 
-            int[] numbers = { 1, 2, 3, 4, 2, 2, 5 };
-            int specialNumber = 2;
-            Console.Write("===================================");
-            Console.Write("The Array = [");
-            int count = CountOccurrences(numbers, specialNumber);
-            for (int i = 0; i <= 6; i++)
-            {
-                Console.Write($"{numbers[i]},");
-            }
-            Console.Write("]\n");
-            Console.WriteLine($"The number {specialNumber} occurs {count} times.");
+            //int[] numbers = { 1, 2, 3, 4, 2, 2, 5 };
+            //int specialNumber = 2;
+            //Console.Write("===================================");
+            //Console.Write("The Array = [");
+            //int count = CountOccurrences(numbers, specialNumber);
+            //for (int i = 0; i <= 6; i++)
+            //{
+            //    Console.Write($"{numbers[i]},");
+            //}
+            //Console.Write("]\n");
+            //Console.WriteLine($"The number {specialNumber} occurs {count} times.");
 
         }
 
